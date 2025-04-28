@@ -1,48 +1,65 @@
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 ### DATE:                                                                            
-### REGISTER NUMBER : 
-### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
+### REGISTER NUMBER : 212222220047
+### Aim: 
+To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
 
-### Algorithm:  1. Direct Instruction Prompts
-Objective: Guide the chatbot to respond concisely to customer inquiries.
-Prompt Pattern:
-Prompt: "When a customer asks for the status of their order, reply with: 'Your order is currently being processed and will be delivered by [date].'"
-2. Contextual Prompting
-Objective: Incorporate specific context to provide detailed answers based on the user’s previous interaction.
-Prompt Pattern:
-Prompt: "If the customer previously mentioned that they haven’t received their order, say, 'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
-3. Persona-Based Prompting
-Objective: Design the chatbot to adopt a specific persona, making the interaction more engaging.
-Prompt Pattern:
-Prompt: "Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as 'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
-4. Few-Shot Prompting
-Objective: Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
-Prompt Pattern:
-Prompt: "Here are some examples of how to handle technical questions:
-'My phone isn't charging.' → 'Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.'
-'The screen is flickering.' → 'It sounds like a display issue. Have you tried restarting the device?'
-Now, respond to: 'My app keeps crashing.'"
-5. Chain of Thought Prompting
-Objective: Use a step-by-step reasoning approach for resolving more complex or technical issues.
-Prompt Pattern:
-Prompt: "When a customer reports their laptop overheating, guide them through the following steps:
-Ask if they are using the laptop on a soft surface.
-Suggest moving the laptop to a flat, hard surface for better airflow.
-Ask if they’ve cleaned the vents recently.
-Recommend restarting the device to see if the issue persists.
-Now, solve: 'My laptop fan is making a loud noise.'"
-6. Instruction with Constraints
-Objective: Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
-Prompt Pattern:
-Prompt: "Respond to order inquiries in no more than 50 words and avoid using technical jargon. For example, 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
-7. Reflective Prompting
-Objective: Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
-Prompt Pattern:
-Prompt: "When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
-Result: The various types of Prompts are executed successfully.
+### Algorithm: 
+
+## 1. Straightforward Prompts
+
+#### Objective: 
+  The goal of straightforward prompts is to ensure the chatbot responds directly and clearly to customer inquiries. This approach works best for simple, direct questions where a short and to-the-point answer is sufficient.
+
+#### Prompt Pattern: 
+  *Prompt:*  
+  "When a customer asks for the status of their order, reply with:  
+  'Your order is currently being processed and will be delivered by [date].'"
+
+#### Explanation:  
+  This approach enables the chatbot to provide a succinct, no-frills response. It reduces complexity by sticking to the essential details, ensuring that customers receive the information they need without unnecessary elaboration. The tone remains polite and professional, maintaining a positive customer experience.
 
 
+## 2. Tabular Format Prompting
+
+#### Objective:  
+  This technique is used to present data in a structured and visually organized manner. When a customer asks for information that involves multiple variables (such as product availability or order details), using a table can help convey the information in an easily digestible format.
+
+#### Prompt Pattern: 
+  Prompt:  
+  "If a customer asks for product availability, respond with the following table format:  
+
+  | Product Name   | Availability Status | Expected Delivery |  
+  |----------------|---------------------|-------------------|  
+  | XYZ Headphones | In Stock            | 3-5 business days |  
+  | ABC Laptop     | Out of Stock        | 2 weeks           |"
+
+#### Explanation:  
+  Tabular format prompting is effective when the chatbot needs to handle multiple pieces of information simultaneously. A table helps to organize data, making it clear and easy for the customer to compare and understand. This approach is particularly useful when providing details like availability, delivery times, or product specifications, as it minimizes confusion.
+  
+## 3. Preceding Question Prompting
+#### Objective:  
+  Preceding question prompting tailors the chatbot’s responses by referencing the customer’s previous inquiries. This technique adds context to the conversation, allowing the chatbot to give more personalized and relevant answers. It is especially useful in troubleshooting scenarios or when the customer has ongoing issues.
+
+#### Prompt Pattern: 
+  Prompt:*  
+  "If the customer previously asked for troubleshooting help, respond with:  
+  'Based on your previous message about troubleshooting your device, here’s what you can do next…'"
+
+#### Explanation:
+  By referencing the previous question, this approach ensures that the chatbot provides a more context-aware response. It helps to reduce redundancy by acknowledging the customer's prior issue and offering a continuation of the support. This technique makes the conversation feel more natural and less repetitive, enhancing the overall customer experience.
 
 
-# Result: Thus the Prompts were exected succcessfully .
+### Implementation and Execution:
 
+The chatbot was developed to incorporate the following prompting techniques:
+
+1. Straightforward Prompts were employed to handle simple inquiries such as order status or product availability. These prompts ensured that the chatbot provided concise and clear responses to direct questions.
+   
+2. Tabular Format Prompting was used when customers requested detailed information, such as product availability or shipping details. Presenting this data in a structured format helped the chatbot deliver responses that were both clear and easy to understand.
+
+3. Preceding Question Prompting was applied when the chatbot needed to continue a conversation based on previous customer inquiries. This allowed the chatbot to offer context-sensitive responses, improving the flow and relevance of the interaction.
+
+
+### Result:
+The chatbot successfully handled a variety of customer queries, including troubleshooting, order tracking, and general product inquiries, using the designed prompting techniques.
