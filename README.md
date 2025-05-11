@@ -1,10 +1,10 @@
 # Ex-3.Scenario-Based Report Development Utilizing Diverse Prompting Techniques
 ### DATE:                                                                            
 ### REGISTER NUMBER : 212222220047
-## Aim: 
+# Aim: 
 The aim of this experiment is to design and develop an AI-powered chatbot that can assist users with product-related queries, such as troubleshooting, order tracking, and general inquiries. The chatbot should be capable of responding accurately and promptly by leveraging various prompting techniques to deliver natural, context-sensitive conversations. This approach enhances both efficiency and user satisfaction in digital customer service interactions.
 
-## Algorithm: 
+# Algorithm: 
 ## 1. Problem Identification
 Understand the nature of queries customers commonly raise—e.g., order tracking, product availability, and technical issues.
 
